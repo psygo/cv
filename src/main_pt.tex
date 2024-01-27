@@ -1,0 +1,125 @@
+\documentclass{llresume}
+
+\definecolor{accentcolor}{HTML}{8D281E}
+\definecolor{fillcolor}{HTML}{E4EDDE}
+\definecolor{headingcolor}{HTML}{1C6336}
+
+\renewcommand{\emph}[1]{{\bfseries\color{accentcolor}#1}}
+
+\name{Philippe}{Fanaro}[Desenvolvedor Full Stack]
+
+\photo{../assets/logo_400.png}
+
+\personalinfo{
+    \infoBirthday{June 27th, 1992}
+    \infoAddress{São Paulo, Brazil}
+    \infoPhone{+55 (11) 97028-6739}
+    \infoEmail{philippefanaro@gmail.com}[mailto:philippefanaro@gmail.]
+    \infoHomepage{fanaro.io}[https://fanaro.io]
+    \infoLinkedin{linkedin.com/in/philippe-fanaro}[https://www.linkedin.com/in/philippe-fanaro/]
+    \infoGithub{github.com/psygo}[https://github.com/psygo]
+}
+
+\tagline{
+    Quatro anos de experiência profissional, com ferramentas primárias sendo \emph{NextJS}, \emph{React}, \emph{TypeScript} e \emph{Express}. Também tenho experiência com \emph{Flutter}, \emph{SQL}, \emph{NoSQL} e \emph{Firebase}. Outras tecnologias com as quais eu sou proficiente: \emph{React Native}, \emph{AWS}, \emph{Lit}, \emph{Three.js}, and \emph{Java}. Veja o meu portfólio: \emph{\href{https://three-portfolio-mu.vercel.app}{@psygo/three-portfolio}}.
+}
+
+\begin{document}
+
+\makeheader
+
+\begin{mainpane}
+    \begin{mainsection}{Experiência}
+        \entryJob
+            {Desenvolvedor Full Stack}
+            [Desenvolvimento de Web Components com Lit, e websites com React; backend com Java e Micronaut; e devops com AWS, Render Retool e DataDog.]
+            {Vertical Insure}
+            {Fev 2023 -- Jun 2023}
+        \entryJob
+            {Desenvolvedor Código-Aberto}
+            [Co-desenvolvi um pacote de estrutura de dados para Dart (Flutter) chamado \href{https://github.com/marcglasberg/fast_immutable_collections}{FIC}.]
+            {\href{https://github.com/marcglasberg/fast_immutable_collections}{Fast Immutable Collections (FIC)}}
+            {Out 2020 -- Jan 2021}
+        \entryJob
+            {Cientista de Dados}
+            [Extração de dados, pré-processamente e modelagem.]
+            {Zanthus}
+            {Fev 2019 -- Out 2019}
+    \end{mainsection}
+    
+    \begin{mainsection}{Habilidades \& Línguas}
+        \entrySkills[Linguagens de Programação \& Outras Tecnologias]{
+            \skill{React}{3}
+            \skill{TypeScript}{3}
+            \skill{SQL}{3}
+            \skill{NoSQL}{3}
+            \skill{Flutter/Dart}{3}
+            \skill{Python}{3}
+            \skill{Firebase}{3}
+            \skill{NextJS}{2}
+            \skill{React Native}{2}
+            \skill{Three.js}{2}
+            \skill{Java}{2}
+            \skill{\LaTeX}{2}
+            \skill{Vim}{2}
+        }
+        \entrySkills[Languages]{
+            \skill{Portuguese}{3}
+            \skill{English}{3}
+            \skill{French}{2}
+            \skill{Coreano}{1}
+        }
+    \end{mainsection}
+    
+    \begin{mainsection}{Outros Interesses}
+        \entryTags{
+            \boxedtag{Go (Jogo)}
+            \boxedtag{Psicologia}
+            \boxedtag{História}
+        }
+    \end{mainsection}
+    
+    \begin{mainsection}{Educação}
+        \entryJob
+            {Engenharia Elétrica (Bacharelado)}
+            [Com especialização em telecomunicações.]
+            {Universidade de São Paulo (USP)}
+            {2011 -- 2016}
+        \entryJob
+            {Intercâmbio Internacional de Engenharia}
+            [Um ano no em Bruxelas, Bélgica, estudando engenharia, aperfeiçoando meu inglês e aprendendo francês.]
+            {Université Libre de Bruxelles (ULB)}
+            {2015 -- 2016}
+    \end{mainsection}
+    
+    \begin{mainsection}{Outros Projetos}
+        \entryGeneric
+            {Go Brasil Ranking}
+            [Um SPA sem framework, utilizando puro TS/HTML/SCSS e Firebase.]
+            [\infoGithub
+                {github.com/psygo/go-brasil-ranking}
+                [https://github.com/psygo/go-brasil-ranking]]
+            [\infoGeneric{\faCalendarDay}{Ago 2022 -- Set 2022}]
+        \entryGeneric
+            {YouTube KBD Nav}
+            [Uma extensão de navegador para se utilizar o YouTube exclusivamente pelo teclado.]
+            [\infoGithub
+                {github.com/psygo/youtube\_kbd\_nav}
+                [https://github.com/FanaroEngineering/youtube\_kbd\_nav]]
+            [\infoGeneric{\faCalendarDay}{Set 2021 -- Out 2021}]
+        \entryJob
+            {Professor de Go (Jogo de Tabuleiro)}
+            [Ensinei Go (Baduk or Weiqi) e, também, transmiti eventos, e ainda  gerenciei uma escola online por um tempo.]
+            {Online or Privately}
+            {Jun 2021 -- Aug 2022}
+        \entryGeneric
+            {Tradução de Livro de Go}
+            [Tradução oficial e edição (\LaTeX) de um livro de Go para iniciantes, do inglês para o português.]
+            [\infoGithub
+                {github.com/psygo/traducao\_como\_jogar\_go}
+                [https://github.com/FanaroEngineering/traducao\_como\_jogar\_go]]
+            [\infoGeneric{\faCalendarDay}{Ago 2021 -- Set 2021}]
+    \end{mainsection}
+\end{mainpane}
+
+\end{document}
