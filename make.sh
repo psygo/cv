@@ -2,5 +2,5 @@
 
 cd ./src/ || exit 1
 
-pdflatex --output-directory=dist main_en.tex
-pdflatex --output-directory=dist main_pt.tex
+pdflatex --output-directory=dist CV_EN.tex
+pdflatex --output-directory=dist CV_PT.tex
