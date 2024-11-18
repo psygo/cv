@@ -6,5 +6,6 @@
         "**/*.log": true,
         "**/*.out": true,
         "**/*.synctex.gz": true,
-    }
+    },
+    "editor.wordWrap": "on"
 }
