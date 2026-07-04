@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[14pt]{extarticle}
 
 % ----------------------------------------------------------
 % Config
@@ -6,9 +6,14 @@
 \usepackage[colorlinks, allcolors = black]{hyperref}
 \usepackage[margin = 2.5cm]{geometry}
 
-\linespread{1.2}
 \renewcommand{\labelitemii}{$\circ$}
+
 \renewcommand{\_}{\leavevmode\kern.06em\vbox{\hrule width.425em}}
+
+% Paragraph Formatting
+
+\setlength{\parindent}{0pt}
+\linespread{1.2}
 
 % ----------------------------------------------------------
 % Title
@@ -17,9 +22,35 @@
 \author{%
   \scshape \Large Full Stack Developer\\[0.5cm]%
   \scshape \Large React | Next.js%
-  \vspace{1cm}%
+  \vspace{0.6cm}%
 }
 \date{}
+
+% ----------------------------------------------------------
+
+\usepackage{mdframed}
+\usepackage{xcolor}
+
+\mdfdefinestyle{CSSquote}{
+    linecolor         = black!50!black,
+    linewidth         = 2.5pt,
+    topline           = false,
+    rightline         = false,
+    bottomline        = false,  
+    backgroundcolor   = white!10,
+    innerleftmargin   = 10pt,
+    innerrightmargin  = 15pt,
+    innertopmargin    = 6pt,
+    innerbottommargin = 5.5pt,
+    skipabove         = 15pt,
+    skipbelow         = 15pt
+}
+
+\newenvironment{cssquote}{%
+  \begin{mdframed}[style=CSSquote]
+}{%
+  \end{mdframed}
+}
 
 % ----------------------------------------------------------
 
@@ -32,7 +63,12 @@
 Four years of professional experience, with a primary stack of \textbf{Next.js}, \textbf{React}, \textbf{TypeScript}. As well as extensive experience in \textbf{Python}, \textbf{Flutter}, \textbf{SQL}, \textbf{NoSQL}, and \textbf{Firebase}. Other technologies I'm also proficient in would be: \textbf{React Native}, \textbf{AWS}, \textbf{Lit} (Web Components), \textbf{Three.js}, and \textbf{Java}.
 
 \vspace{0.4cm}
-\noindent Check out my portfolio and blog: \textbf{\href{https://neofanaroio.vercel.app}{neofanaroio.vercel.app}}.
+
+\begin{cssquote}
+Check out my portfolio and blog: \textbf{\href{https://neofanaroio.vercel.app}{neofanaroio.vercel.app}}.
+\end{cssquote}
+
+% Check out my portfolio and blog: \textbf{\href{https://neofanaroio.vercel.app}{neofanaroio.vercel.app}}.
 
 \section{Work Experience}
 
@@ -57,8 +93,6 @@ Four years of professional experience, with a primary stack of \textbf{Next.js},
           \item DevOps: AWS, Render, DataDog, Retool, etc.
         \end{itemize}
     \end{itemize}
-
-  \pagebreak
 
   \item \textbf{Go (Board Game) Teacher} \textit{(Jun 2021 -- Aug 2022)}
     \begin{itemize}
@@ -98,11 +132,29 @@ Four years of professional experience, with a primary stack of \textbf{Next.js},
     \end{itemize}
   \item \textbf{International Engineering Exchange} @ Université Libre de Bruxelles (ULB) \textit{(2015 -- 2016)}
     \begin{itemize}
-      \item One year abroad in Brussels, Belgium, studying engineering, through a government scholarship.
+      \item One year abroad in Brussels, Belgium, studying engineering, \linebreak through a government scholarship.
       \item Perfected my English
       \item Learned French.
     \end{itemize}
 \end{enumerate}
+
+\section{Projects}
+
+\begin{itemize}
+  \item \textbf{\href{https://neofanaroio.vercel.app}{neofanaroio.vercel.app}
+} \textit{(Jun 2026 -- Today)}
+    \begin{itemize}
+      \item My personal portfolio and blog, built with Next.js and TailwindCSS.
+      \item The new version of my old, basic blog, \href{https://github.com/psygo/fanaro.io}{fanaro.io}.
+    \end{itemize}
+    
+  \item \textbf{Magi} \textit{(Sep 2025 -- Dec 2025)}
+    \begin{itemize}
+      \item A 2D exploration of the internet, using SQL and Excalidraw to create a graph database.
+    \end{itemize}
+\end{itemize}
+
+
 
 \section{Technologies}
 
@@ -117,6 +169,7 @@ Four years of professional experience, with a primary stack of \textbf{Next.js},
       \item HTML
       \item CSS
     \end{itemize}
+    
   \item Other technologies I have worked with:
     \begin{itemize}
       \item Flutter/Dart
@@ -125,21 +178,21 @@ Four years of professional experience, with a primary stack of \textbf{Next.js},
       \item Three.js
       \item React Native
       \item Firebase
+      \item \LaTeX
     \end{itemize}
   \item Data Science/Analytics stack I have worked with:
     \begin{itemize}
       \item Python
+      \item SQL
       \item Pandas
       \item NumPy
       \item Scikit-learn
-      \item SQL
     \end{itemize}
   \item Other technologies I use or have used:
     \begin{itemize}
       \item Java
       \item Shell
       \item Vim
-      \item \LaTeX
       \item TikZ/PGF
     \end{itemize}
 \end{itemize}
@@ -155,8 +208,16 @@ Four years of professional experience, with a primary stack of \textbf{Next.js},
   \item Japanese (Basic)
 \end{itemize}
 
-\section{Projects}
-
 \section{Personal Interests}
+
+On my free time, I enjoy reading and watching videos about psychology, history, philosophy and economics.
+
+\vspace{0.4cm}
+
+I'm also a big fan of board games in general, not only of Go (Baduk or Weiqi). Among other board games I'm a fan of: backgammon, shogi, Blokus.
+
+\vspace{0.4cm}
+
+And I regularly post articles and videos on my blog (\href{https://neofanaroio.vercel.app}{neofanaroio.vercel.app}) and YouTube channels, on Go, software, psychology, and a variety of different topics.
 
 \end{document}
