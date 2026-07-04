@@ -15,6 +15,32 @@
 \setlength{\parindent}{0pt}
 \linespread{1.2}
 
+% Quote Formatting
+
+\usepackage{mdframed}
+\usepackage{xcolor}
+
+\mdfdefinestyle{CSSquote}{
+  linecolor         = black!50!black,
+  linewidth         = 2.5pt,
+  topline           = false,
+  rightline         = false,
+  bottomline        = false,  
+  backgroundcolor   = white!10,
+  innerleftmargin   = 10pt,
+  innerrightmargin  = 15pt,
+  innertopmargin    = 6.5pt,
+  innerbottommargin = 6pt,
+  skipabove         = 15pt,
+  skipbelow         = 15pt
+}
+
+\newenvironment{cssquote}{%
+  \begin{mdframed}[style=CSSquote]
+}{%
+  \end{mdframed}
+}
+
 % ----------------------------------------------------------
 % Title
 
@@ -25,32 +51,6 @@
   \vspace{0.6cm}%
 }
 \date{}
-
-% ----------------------------------------------------------
-
-\usepackage{mdframed}
-\usepackage{xcolor}
-
-\mdfdefinestyle{CSSquote}{
-    linecolor         = black!50!black,
-    linewidth         = 2.5pt,
-    topline           = false,
-    rightline         = false,
-    bottomline        = false,  
-    backgroundcolor   = white!10,
-    innerleftmargin   = 10pt,
-    innerrightmargin  = 15pt,
-    innertopmargin    = 6pt,
-    innerbottommargin = 5.5pt,
-    skipabove         = 15pt,
-    skipbelow         = 15pt
-}
-
-\newenvironment{cssquote}{%
-  \begin{mdframed}[style=CSSquote]
-}{%
-  \end{mdframed}
-}
 
 % ----------------------------------------------------------
 
@@ -67,8 +67,6 @@ Four years of professional experience, with a primary stack of \textbf{Next.js},
 \begin{cssquote}
 Check out my portfolio and blog: \textbf{\href{https://neofanaroio.vercel.app}{neofanaroio.vercel.app}}.
 \end{cssquote}
-
-% Check out my portfolio and blog: \textbf{\href{https://neofanaroio.vercel.app}{neofanaroio.vercel.app}}.
 
 \section{Work Experience}
 
@@ -130,6 +128,7 @@ Check out my portfolio and blog: \textbf{\href{https://neofanaroio.vercel.app}{n
       \item Specializing in telecommunications.
       \item (Engineering degrees take 5 years in Brazil.)
     \end{itemize}
+
   \item \textbf{International Engineering Exchange} @ Université Libre de Bruxelles (ULB) \textit{(2015 -- 2016)}
     \begin{itemize}
       \item One year abroad in Brussels, Belgium, studying engineering, \linebreak through a government scholarship.
@@ -148,12 +147,26 @@ Check out my portfolio and blog: \textbf{\href{https://neofanaroio.vercel.app}{n
       \item The new version of my old, basic blog, \href{https://github.com/psygo/fanaro.io}{fanaro.io}.
     \end{itemize}
     
-  \item \textbf{Magi} \textit{(Sep 2025 -- Dec 2025)}
+  \item \textbf{Magi} \textit{(Sep 2025 -- Dec 2025)} 
     \begin{itemize}
       \item A 2D exploration of the internet, using SQL and Excalidraw to create a graph database.
+      \item \href{https://github.com/psygo/magi}{github.com/psygo/magi}
+    \end{itemize}
+    
+  \item \textbf{Aquarifolio} \textit{(Sep 2025 -- Dec 2025)}
+    \begin{itemize}
+      \item A 3D aquarium containing most of my work, done with Three.js and React.
+      \item \href{https://github.com/psygo/aquarifolio}{github.com/psygo/aquarifolio}
     \end{itemize}
 \end{itemize}
 
+        % \entryGeneric
+        %     {Aquarifolio}
+        %     [A 3D aquarium containing most of my work, done with Three.js and React.]
+        %     [\infoGithub
+        %         {@psygo/aquarifolio}
+        %         [https://@psygo/aquarifolio]]
+        %     [\infoGeneric{\faCalendarDay}{Sep 2025 -- Dec 2025}]
 
 
 \section{Technologies}
@@ -219,5 +232,19 @@ I'm also a big fan of board games in general, not only of Go (Baduk or Weiqi). A
 \vspace{0.4cm}
 
 And I regularly post articles and videos on my blog (\href{https://neofanaroio.vercel.app}{neofanaroio.vercel.app}) and YouTube channels, on Go, software, psychology, and a variety of different topics.
+
+\section{Personal Information}
+
+% TODO: Change this into a table
+
+\begin{itemize}
+  \item \textbf{Birthday:} June 27th, 1992
+  \item \textbf{Address:} São Paulo, Brazil
+  \item \textbf{Phone:} +55 (11) 97028-6739
+  \item \textbf{Email:} \href{mailto:philippefanaro@gmail.com}{philippefanaro@gmail.com}
+  \item \textbf{Homepage:} \href{https://neofanaroio.vercel.app/}{neofanaroio.io}
+  \item \textbf{LinkedIn:} \href{https://www.linkedin.com/in/philippe-fanaro/}{linkedin.com/in/philippe-fanaro}
+  \item \textbf{GitHub:} \href{https://github.com/psygo}{github.com/psygo}
+\end{itemize}
 
 \end{document}
