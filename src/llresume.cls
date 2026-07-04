@@ -347,7 +347,7 @@
 }
 
 \NewDocumentCommand{\entryJob}{m +o m m}{%
-    \entryGeneric{#1}[#2][\infoPlace{#3}][\infoDate{#4}]%
+    \entryGeneric{#1}[#2][\vspace{0.1cm}\infoPlace{#3}][\infoDate{#4}]%
 }
 
 \NewDocumentCommand{\entryPub}{m +o m m m o}{%
