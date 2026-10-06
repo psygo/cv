@@ -12,10 +12,16 @@
   top    = 1.5cm,
   left   = 1.5cm,
   right  = 1.5cm,
+  bottom = 1.5cm,
 ]{geometry}
 \usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{titlesec}
 
-\renewcommand{\labelitemii}{$\circ$}
+\titlespacing*{\section}{0pt}{6pt plus 1pt minus 1pt}{8pt plus 1pt minus 1pt}
+
+\renewcommand{\labelitemi}{\small\textbullet}
+\renewcommand{\labelitemii}{\small$\circ$}
 
 \renewcommand{\_}{\leavevmode\kern.06em\vbox{\hrule width.425em}}
 
@@ -65,7 +71,7 @@
   \scshape \Large Software Engineer%
   \\[0.5cm]%
   \scshape \fontsize{19pt}{22pt}\selectfont Next.js \& React.js Specialist | TypeScript \& AI%
-  \vspace{0.6cm}%
+  % \vspace{0.6cm}%
 }
 \date{}
 
@@ -77,7 +83,11 @@
 
 \section{Summary}
 
-I build fast. With an AI-powered workflow, I deliver beautiful frontend experiences alongside a performant backend. 3+ years of professional experience, with a primary stack of \textbf{Next.js}, \textbf{React}, \textbf{TypeScript}. As well as extensive experience in \textbf{Python}, \textbf{Flutter}, \textbf{SQL}, \textbf{NoSQL}, and \textbf{Firebase}. Other technologies I'm also proficient in would be: \textbf{React Native}, \textbf{AWS}, \textbf{Lit} (Web Components), \textbf{Three.js}, and \textbf{Java}.
+I build fast. With an AI-powered workflow, I deliver beautiful frontend experiences alongside a performant backend.
+
+\vspace{0.2cm}
+
+3+ years of professional experience, with a primary stack of \textbf{Next.js}, \textbf{React}, \textbf{TypeScript}. As well as extensive experience in \textbf{Python}, \textbf{Flutter}, \textbf{SQL}, \textbf{NoSQL}, and \textbf{Firebase}. Other technologies I'm also proficient in would be: \textbf{React Native}, \textbf{AWS}, \textbf{Lit} (Web Components), \textbf{Three.js}, and \textbf{Java}.
 
 % \vspace{0.3cm}
 
@@ -90,58 +100,33 @@ I build fast. With an AI-powered workflow, I deliver beautiful frontend experien
 \begin{enumerate}
   \item \textbf{Programmer and Writer} \textit{(Sep 2024 -- Dec 2024)}
     \begin{itemize}
-      \item Designed and developed an open-source \LaTeX\ package for generating vector Go (Baduk/Weiqi) board diagrams, and used it to write and typeset a complete book, \textit{``T\'ecnicas de Go.''}
-      \item Built a reusable \LaTeX/TeX package that renders scalable vector graphics (SVG/PDF-quality) Go diagrams from code, replacing manual image creation.
-      \item Authored and typeset a 400-page technical book in Portuguese using \LaTeX, covering tesujis, life-and-death, and other techniques.
-      \item Designed a clean, documented API so other authors can produce publication-quality diagrams with minimal setup.
-      \item Managed the full project lifecycle independently: requirements, software design, implementation, documentation, version control (Git/GitHub), and release.
-      \item Published under an open-source license on GitHub (20+ Stars): \\ \href{https://github.com/psygo/tecnicas_de_go}{github.com/psygo/tecnicas\_de\_go}
+      \item Designed an open-source \LaTeX\ package for generating vector Go (Baduk/Weiqi) board diagrams, and used it to author and typeset a 400-page technical book, \textit{``T\'ecnicas de Go.''}
+      \item Managed the full project lifecycle independently and published under an open-source license on GitHub (20+ Stars): \href{https://github.com/psygo/tecnicas_de_go}{github.com/psygo/tecnicas\_de\_go}
     \end{itemize}
 
   \item \textbf{Full Stack Developer} @ Vertical Insure, Inc. \textit{(Feb 2023 -- Jun 2023)} \textit{-- United States (Remote)}
     \begin{itemize}
-      \item Full Stack Developer working across the entire application stack, from frontend development to backend services, cloud infrastructure, and observability.
-      \item Built and maintained web applications using React, Lit Framework, JavaScript, and TypeScript, with a focus on reusable components and responsive user interfaces.
-      \item Developed backend services and APIs using Java, Micronaut, Node.js, and Express, integrating application logic with external APIs from the insurance sector.
-      \item Worked across the full development lifecycle, from implementing new features and debugging existing systems to deployment and production monitoring.
-      \item Managed cloud and deployment infrastructure using AWS and Render, with Datadog for monitoring and observability.
-      \item Used tools such as Retool to rapidly develop internal interfaces and operational tools.
-      \item Collaborated across the frontend, backend, and infrastructure layers, gaining experience in designing and connecting the different components of a production software system.
-      \item Tech Stack:
-        \begin{itemize}
-          \item Frontend: React, Lit Framework, JS | TS
-          \item Backend: Java, Micronaut, NodeJS, Express
-          \item DevOps: AWS, Render, DataDog, Retool, etc.
-        \end{itemize}
+      \item Built reusable UI components and responsive web applications with React, Lit Framework, and TypeScript.
+      \item Developed backend APIs with Java, Micronaut, Node.js, and Express, integrating with external insurance-sector platforms.
+      \item Managed cloud deployment and observability using AWS, Render, and Datadog.
     \end{itemize}
 
   \item \textbf{Open Source Software Developer -- Dart / Flutter} @ Freelance \textit{(Sep 2020 -- Jan 2021)} \textit{-- Online}
     \begin{itemize}
-      \item Co-developed an open source data structure package for Dart/Flutter (Fast Immutable Collections, or FIC): \\ \href{https://github.com/marcglasberg/fast_immutable_collections}{github.com/marcglasberg/fast\_immutable\_collections}
-      \item Designed and implemented immutable lists, sets, maps, and multimaps, as well as extension methods, collection utilities, and custom comparators for native Dart collections.
-      \item Worked on data structures, algorithms, performance optimization, API design, package development, testing, documentation, and Git-based collaborative software development.
-      \item Contributed to the design and implementation of collection types optimized to provide performance comparable to native mutable Dart collections while preserving immutability.
-      \item Collaborated with other developers through GitHub, Git, code review, issue tracking, and Kanban-based development workflows.
+      \item Co-developed Fast Immutable Collections (FIC), a high-performance immutable data structures package for Dart/Flutter: \\ \href{https://github.com/marcglasberg/fast_immutable_collections}{github.com/marcglasberg/fast\_immutable\_collections}
+      \item Designed immutable lists, sets, maps, and multimaps with custom comparators and extension methods, applying Test-Driven Development throughout.
     \end{itemize}
 
   \item \textbf{Data Scientist} @ Zanthus \textit{(Feb 2019 -- Oct 2019)} \textit{-- Greater S\~ao Paulo Area}
     \begin{itemize}
-      \item Full-stack data scientist at Zanthus, a retail automation software company, owning the complete data pipeline from extraction to production API.
-      \item Built a Customer Lifetime Value (CLV) model to predict customer value for retail clients, supporting marketing, retention and segmentation decisions.
-      \item Extracted and queried large retail transaction datasets using SQL from PostgreSQL and Oracle databases.
-      \item Performed data cleaning, preprocessing, and feature engineering in Python using pandas and NumPy.
-      \item Developed and evaluated machine learning and statistical models with scikit-learn and lifetimes.
-      \item Designed and deployed a REST API with Django to serve model predictions and data to internal systems.
-      \item Delivered end-to-end data science projects independently: data extraction, ETL, modeling, deployment, and stakeholder communication.
-      \item Tech Stack: Python, Pandas, NumPy, Scikit-learn, Django, and SQL.
+      \item Built a Customer Lifetime Value (CLV) model to support retail marketing, retention, and segmentation decisions.
+      \item Owned the full data pipeline: SQL extraction, preprocessing with pandas/NumPy, modeling with scikit-learn, and a Django REST API serving predictions.
     \end{itemize}
-
+    
   \item \textbf{Intern} @ Vital Care App \textit{(Sep 2016 -- Dec 2016)} \textit{-- Greater S\~ao Paulo Area}
     \begin{itemize}
-      \item Improved the customer service, digital marketing, and SEO strategies.
-      \item Proposed and implemented user interface (UI) and user experience (UX) enhancements to the mobile app.
-      \item Investigated regulatory compliance issues with partner pharmacies, analyzing health and sanitary infractions to help protect marketplace quality and customer trust.
-      \item Worked across product, marketing, and operations in a fast-paced early-stage startup environment.
+      \item Improved customer service, digital marketing, and SEO strategies, and proposed UI/UX enhancements to the mobile app.
+      \item Investigated regulatory compliance issues with partner pharmacies to help protect marketplace quality.
     \end{itemize}
 \end{enumerate}
 
@@ -167,6 +152,9 @@ I build fast. With an AI-powered workflow, I deliver beautiful frontend experien
 
 \section{Projects}
 
+\vspace*{-0.3cm}
+
+\begin{multicols}{2}
 \begin{itemize}
   \item \textbf{\href{https://gerent.app}{GerentIA}
 } \textit{(Aug 2026 -- Today)}
@@ -229,22 +217,28 @@ I build fast. With an AI-powered workflow, I deliver beautiful frontend experien
       \item \href{https://psygo.github.io/fanaro.io/}{fanaro.io}
     \end{itemize}
 \end{itemize}
+\end{multicols}
 
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
 \section{Certifications}
 
 \begin{itemize}
-  \item TOEFL ibT 103/120 (C2 Proficient) (2017)
+  \item TOEFL ibT 103/120 (C2 Proficient)
   \item EF SET English Certificate 76/100 (C2 Proficient)
   \item Deep Learning Specialization
   \item Data Science Forum Participant
 \end{itemize}
-
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
 \section{Publications}
 
 \begin{itemize}
   \item \textbf{T\'ecnicas de Go} -- A 400-page technical book on Go (Baduk/Weiqi), written and typeset entirely in \LaTeX.
   \item \textbf{Tradu\c{c}\~ao de Livro de Go} -- Official translation and editing of an introductory book on Go, from English to Portuguese.
 \end{itemize}
+\end{minipage}
 
 \section{Competencies}
 
@@ -270,46 +264,41 @@ Frontend Development \textbullet\ Backend Development \textbullet\ REST APIs \te
 
 \textbf{Other technologies I use or have used:} Java \textbullet\ Shell \textbullet\ Vim \textbullet\ TikZ/PGF \textbullet\ Git \textbullet\ Github \textbullet\ Docker \textbullet\ REST APIs \textbullet\ JSON \textbullet\ Linux \textbullet\ AWS
 
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
 \section{Languages}
 
-\vspace{0.2cm}
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{0.5cm}
 
-\hbox{
-  \hspace{0.05cm}
-  \renewcommand{\arraystretch}{1.25}
-  \setlength{\tabcolsep}{0.5cm}
-
-  \begin{tabular}{ l | l  }
-    \textbf{Language} & \textbf{Proficiency} \\
-    \hline\hline
-    Portuguese & Native or Bilingual \\
-    English & Native or Bilingual \\
-    French & Advanced \\
-    Spanish & Intermediate \\
-    Korean & Basic \\
-    Japanese & Basic
-  \end{tabular}
-}
-
-\vspace{1.1cm}
-
+\begin{tabular}{ l | l  }
+  \textbf{Language} & \textbf{Proficiency} \\
+  \hline\hline
+  Portuguese & Native or Bilingual \\
+  English & Native or Bilingual \\
+  French & Advanced \\
+  Spanish & Intermediate \\
+  Korean & Basic \\
+  Japanese & Basic
+\end{tabular}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
 \section{Personal Information}
 
-\vspace{0.7cm}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{0.2cm}
 
-\hbox{
-  \hspace{0.05cm}
-  \renewcommand{\arraystretch}{1.25}
-  \setlength{\tabcolsep}{0.5cm}
-
-  \begin{tabular}{ l | l }
-    \textbf{Location} & S\~ao Paulo, S\~ao Paulo, Brazil \\
-    \textbf{Phone} & \href{tel:+5511970286739}{+55 (11) 97028-6739} \\
-    \textbf{Email} & \href{mailto:philippefanaro@gmail.com}{philippefanaro@gmail.com} \\
-    \textbf{Blog} & \href{https://neofanaroio.vercel.app/}{neofanaro.io} \\
-    \textbf{LinkedIn} & \href{https://www.linkedin.com/in/philippe-fanaro/}{linkedin.com/in/philippe-fanaro} \\
-    \textbf{GitHub} & \href{https://github.com/psygo}{github.com/psygo}
-  \end{tabular}
-}
+\begin{tabular}{ l | l }
+  \textbf{Location} & S\~ao Paulo, Brazil \\
+  \textbf{Phone} & \href{tel:+5511970286739}{+55 (11) 97028-6739} \\
+  \textbf{Email} & \href{mailto:philippefanaro@gmail.com}{philippefanaro@gmail.com} \\
+  \textbf{Blog} & \href{https://neofanaroio.vercel.app/}{neofanaro.io} \\
+  \textbf{LinkedIn} & \href{https://www.linkedin.com/in/philippe-fanaro/}{linkedin.com/in/philippe-fanaro} \\
+  \textbf{GitHub} & \href{https://github.com/psygo}{github.com/psygo}
+\end{tabular}
+\normalsize
+\end{minipage}
 
 \end{document}
